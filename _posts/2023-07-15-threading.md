@@ -2,8 +2,8 @@
 layout: post
 title: Threading in C++
 date: 2023-07-15 15:09:00
-description: Revise threading in depth
-tags: finance code
+description: A comprehensive guide to threading in C++11
+tags: code cpp
 categories: tech
 featured: true
 ---

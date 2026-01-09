@@ -2,104 +2,89 @@
   type: map
   contents:
     - name: Full Name
-      value: Ananyapam De
-    - name: Date of Birth
-      value: 14th September 2000
+      value: Sayyed Neha Firdous
+    - name: Location
+      value: Clausthal-Zellerfeld, Germany
     - name: Languages
-      value: Bengali, Hindi, English, Sanskrit
+      value: English, German (Working proficiency), Hindi
 
 - title: Research Interests
   type: list
   contents:
-    - Probabilistic ML, Approximate Inference, Regression Models, Optimization, Deep Learning
+    - LLM Evaluation, RAG Pipelines, DevOps, Software Engineering, Data Engineering
 
 - title: Skills
   type: list
   contents:
-    - C/C++, Python (Pytorch, Tensorflow), R, SQL
+    - "Programming: Python, Java, C#, C++, JavaScript, TypeScript"
+    - "DevOps: Docker, Jenkins, Git, Bitbucket, Vagrant, Linux, CI/CD"
+    - "Databases: MySQL, MongoDB, Neo4j, PowerBI"
+    - "Software Engineering: UML, SysML, ASPICE, Agile/Scrum, TDD"
 
 - title: Education
   type: time_table
   contents:
-    - title: Research Assistant (RA)
-      institution: Technische Universität Clausthal, Germany
-      department: Department of Mathematics
-      year: 2024 - Present 
-    - title: Bachelors and Masters (BS-MS) Dual Degree
-      institution: Indian Instiute of Science Education and Research, Kolkata
-      department: Department of Mathematics and Statistics
-      year: 2018 - 2023
+    - title: Master's in Computer Science
+      institution: Clausthal University of Technology, Germany
+      year: 2021 - Present
       description:
-        - <strong>Minor:</strong> Computational and Data Sciences
-        - <strong>MS Thesis Title:</strong> Latent Factor Analysis and Regression of Multivariate Poisson Lognormal Counts using Amortized Variational Inference
-        - <strong>MS Thesis Supervisor:</strong> <a href="https://www.mpinat.mpg.de/soeding">Prof. Johannes Soeding</a>, co-advised by <a href="https://www.iiserkol.ac.in/web/en/people/faculty/dms/satyaki/">Prof. Satyaki Mazumder</a>.
-        - <strong>Courses:</strong>
-          <ul><strong>Mathematics:</strong> Real Analysis, Linear Algebra, Abstract Algebra, Graph Theory and Combinatorics, Topology, Complex Analysis, Functional Analysis, Measure Theory, Differential Geometry, Ordinary Differential Equations, Partial Differential Equations</ul>
-          <ul><strong>Statistics:</strong> Probability Theory and Measure Theoretic Probability, Statistical Inference, Linear Models, Time Series</ul>
-          <ul><strong>Economics:</strong> Economics, Applied Micro-econometrics </ul>
-          <ul><strong>Computer Science:</strong> Data Structures and Algorithms, Machine Learning and Network Analysis, Natural Language Processing, Search Methods in Artificial Intelligence, Information Retrieval</ul>
-    - title: High School
-      institution: St. Columba's School, New Delhi
-      year: 2004 - 2018
+        - <strong>Master's Thesis:</strong> Traceability and Impact Analysis for DevOps-Based Airborne Software (DLR, Braunschweig)
+    - title: Bachelor's in Computer Science
+      institution: Indore Institute of Science and Technology, India
+      year: 2014 - 2018
 
 - title: Research Experience
   type: time_table
   contents:
-    - title: Pre-Doctoral Fellow
-      institution: Indian Institute of Technology, Bombay
-      department: Centre for Machine Intelligence and Data Science
-      year: Jul - Dec 2023
+    - title: Research Assistant (HiWi) – RAG and LLM Evaluation Project
+      institution: TU Clausthal
+      year: Sep 2025 - Dec 2025
       description:
-        - <b>Project Supervisor:</b> <a href="https://www.cse.iitb.ac.in/~sharat/">Prof. Sharat Chandran</a>, IIT-B.
-        - <b>Courses:</b> Computer Graphics, Asymptotic Statistics, Operating Systems
-    - title: Research Assistant
-      institution: Indian Institute of Management, Bangalore
-      department: Decision Sciences Department
-      year: Dec 2022 - Mar 2023
+        - Building a RAG-based factual reasoning pipeline to analyze and reduce hallucinations in mid-sized (8B) LLMs.
+        - Evaluating and comparing two 8B-parameter LLMs using custom benchmarks, embedding similarity metrics, and retrieval latency/performance analysis.
+        - Experimenting with knowledge editing techniques and structured retrieval for trustworthy LLM behavior.
+    - title: Master's Thesis - Traceability and Impact Analysis for Airborne Software
+      institution: DLR, Braunschweig, Germany
+      year: 2024 - 2025
       description:
-        - <b>Project Title:</b> Optimal Staring Lineup and Substitution Strategy for NBA using GRASP and Deep Q Learning.
-        - <b>Project Supervisor:</b> Prof. Soudeep Deb, Prof. Rishideep Roy and Prof. Subhabrata Das
+        - Built a model and ontology for DO-178C traceability in DevOps CI environments.
+        - Developed Python tooling and used graph databases to automate test and requirement impact analysis.
+        - Integrated the approach in CI pipelines to assist change-impact assessments for airborne software artifacts.
+    - title: Android App for Healthcare
+      institution: TU Clausthal
+      year: Apr 2023 - Aug 2023
+      description:
+        - Built a gamified Android app (Java/Kotlin) for the Pepper robot to assist depression therapy.
+        - Implemented real-time sentiment analysis using NLP techniques (TF-IDF, SVM) to detect patient mood from text input.
+        - Integrated facial recognition with OpenCV, MediaPipe, and pre-trained CNN models to monitor patient engagement.
 
-    - title: Machine Learning Research Assistant
-      institution: Google Winter of Code, Skit AI
-      year: Dec 2021 - Feb 2022
-      description:
-        - <b>Project Title:</b> Improving Text-to-Speech(TTS) systems.
-
-    - title: Quantitative Research Intern
-      institution: JP Morgan Chase
-      year: Jul - Aug, 2021
-      description:
-        - <b>Project Title:</b> Volatility Modelling in Crude Oil Prices
-    
-    - title: Research Software Developer
-      institution: Max Planck Institute of Multidisciplinary Sciences, Göttingen
-      department: Quantitative and Computational Biology Group
-      year: May - Jul, 2021
-      description:
-        - <b>Project Title:</b> Gappiness Match Score Correction
-        - <b>Project Supervisor:</b> Prof. Johannes Söding
-
-    - title: Quant Trading Intern
-      institution: Stellar Alpha Global (Now Greenland Investment)
-      year: Apr - May, 2020
-      description:
-        - <b>Project Title:</b> Researched on Alpha Generation Strategies using Fractal Analysis
-
-- title: Teaching Experience
+- title: Professional Experience
   type: time_table
   contents:
-    - title: Teaching Assistant
-      institution: Technische Universität Clausthal, Germany
-      year: Mar - Jul 2024
-      description: Acted as the TA for the Statistical Data Science course.
-
-    - title: Teaching Fellow
-      institution: Ashoka University, Sonipat (in collaboration with IIT-D, ISI-D, JNU)
-      year: May - June 2023
-      description: Taught and assisted undergrads and high school students in olympiad level mathematics problem solving in Number Theory, Geometry and Combinatorics.
-
-    - title: Teaching Assistant
-      institution: Indian Institute of Science Education and Research, Kolkata
-      year: Aug - Dec 2022
-      description: Acted as the TA for the Statistcs-I (MA3205) course.
+    - title: Software Systems Engineer
+      institution: HolyPoly GmbH, Dresden, Germany
+      year: Apr 2024 - Dec 2024
+      description:
+        - Designed a Vagrant Ubuntu 24.04 VM setup for Flet/Flutter app development, reducing environment setup time by 30%.
+        - Developed Python-based Flet apps using Poetry; managed deployments with Docker and Git.
+        - Automated MongoDB and API operations with Python scripts and Postman.
+        - Collaborated on system documentation, software validation and process improvements.
+    - title: Database Engineer / DevOps Support
+      institution: CARIAD SE (Volkswagen Group), Berlin, Germany
+      year: Nov 2022 - Apr 2023
+      description:
+        - Developed Python ETL scripts to extract, transform, and load Codebeamer data into PowerBI dashboards for ADAS project analytics.
+        - Implemented automated data processing pipelines using pandas, SQLAlchemy, and REST APIs.
+        - Assisted in CI/CD pipeline design for Audi ADAS projects using Jenkins, Git, and containerized environments.
+        - Collaborated with Agile teams via Jira to implement traceability, reporting, and workflow optimizations.
+    - title: IT Specialist
+      institution: Crossengage GmbH, Berlin, Germany
+      year: Oct 2022 - Nov 2022
+      description:
+        - Managed API and account provisioning and maintained Git/Bitbucket-based CI/CD pipelines.
+    - title: Software Developer
+      institution: Affimintus Technologies Pvt. Ltd., Indore, India
+      year: Mar 2017 - Sep 2017
+      description:
+        - Developed a full-stack internal web application using .NET/C# (backend), JavaScript (frontend), and Java services with RESTful APIs.
+        - Integrated auth and logging frameworks for secure and maintainable code.

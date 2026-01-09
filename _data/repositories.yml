@@ -1,15 +1,6 @@
 github_users:
-  - Ananyapam7
+  - sn91
 
 github_repos:
-  - soedinglab/MMseqs2
-  - skit-ai/woc-tts-enhancement
-  - Ananyapam7/YouTubeVolumeTransition
-  - Ananyapam7/Exploring-Blockchain-and-Cryptocurrency
-  - Ananyapam7/AILA-Artificial-Intelligence-for-Legal-Assistance
-  - Ananyapam7/Customer-Churn-Prediction-IIITD/
-
-websites_designed:
-  - IISER-K-Chess-Club/chess-club
-  - sahasatvik/tabletennis.iiserkol
-  - Ananyapam7/rubik-s-club-website
+  # Add your repositories here
+  # - sn91/repo-name

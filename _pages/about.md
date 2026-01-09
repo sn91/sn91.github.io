@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Researcher @ <a href='https://www.mathematik.tu-clausthal.de/en/ueber-uns/mitarbeiter/'> TU-Clausthal </a>• <b>Previously:</b> <b>Pre-Doc Fellow</b> @ <a href='https://www.iitb.ac.in/'>IIT Bombay</a> | <a href='https://www.mpinat.mpg.de/soeding'> Soeding Lab @ MPI-NAT Goettingen</a> | <a href='https://www.iiserkol.ac.in/'>IISER Kolkata</a>
+subtitle: Master's in Computer Science @ <a href='https://www.tu-clausthal.de/'>TU Clausthal</a> • <b>Previously:</b> Software Engineer @ <a href='https://www.holypoly.de/'>HolyPoly GmbH</a> | <a href='https://cariad.technology/'>CARIAD SE (Volkswagen)</a>
 
 profile:
   align: right
@@ -16,14 +16,16 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm currently a Research Assistant at TU-Clausthal. Previously I've been a Pre-Doctoral fellow at the Indian Institute of Technology, Bombay.
+I'm currently pursuing my Master's in Computer Science at Clausthal University of Technology, Germany. My Master's thesis focuses on **Traceability and Impact Analysis for DevOps-Based Airborne Software** at DLR Braunschweig.
 
-I majored in Mathematics from IISER Kolkata, complemented with a minor in Computational and Data Sciences where I enjoyed learning about Statistics through courses like Statistical Inference and Linear Models. My interest in this field grew further when I attended the Amazon ML Summer School which led me to do my MS Thesis on Learning Generalized Linear Mixed Models using Variational Inference under Prof. Johannes Soeding at the Max Planck Institute for Natural Sciences (MPI-NAT), who had also supervised me for a summer project in my third year.
+I'm currently working as a Research Assistant (HiWi) at TU Clausthal, where I'm building a **RAG-based factual reasoning pipeline** to analyze and reduce hallucinations in mid-sized LLMs. This involves evaluating 8B-parameter models using custom benchmarks, embedding similarity metrics, and experimenting with knowledge editing techniques for trustworthy LLM behavior.
 
-I gained significant practical experience in quantitative analysis and machine learning while interning at Skit AI, IIM-B, JPMC and Stellar Alpha (now Greenland Investment). My research interests include Probabilistic ML, Approximate Inference, MCMC, and Optimization, areas that combine statistical theory with practical programming skills.
+My professional experience spans **Software Engineering** and **DevOps**. At HolyPoly GmbH, I designed VM setups for Flet/Flutter development and managed deployments with Docker. At CARIAD SE (Volkswagen Group), I developed ETL pipelines for PowerBI dashboards and assisted in CI/CD pipeline design for Audi ADAS projects using Jenkins and containerized environments.
 
-Joining IIT Bombay broadened my knowledge in areas like Operating Systems, Microprocessors, and Computer Networks. I have decent experience in C++, Python, and [Problem Solving](https://leetcode.com/ananyapam7/). 
+I completed my Bachelor's in Computer Science from Indore Institute of Science and Technology, India (2014-2018).
 
-Off duty you'll find me playing Table-Tennis, chess, football or strumming my uke!
-
-[comment]: <> ( Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.)
+**Technical Skills:**
+- **Programming:** Python, Java, C#, C++, JavaScript, TypeScript (learning), React
+- **DevOps & Tools:** CI/CD pipelines, Docker, Jenkins, Git, Bitbucket, Vagrant, Linux
+- **Databases:** MySQL, MongoDB, Neo4j, PowerBI
+- **Software Engineering:** UML, SysML, ASPICE, Software Validation, Agile/Scrum, TDD

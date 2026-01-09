@@ -1,8 +1,7 @@
 ---
 layout: post
-date: 2023-06-27 15:59:00-0400
+date: 2024-04-01 15:59:00-0400
 inline: true
 related_posts: false
 ---
-
-Graduated from IISER Kolkata with a BS-MS in Mathematics and Statistics.
+Joined HolyPoly GmbH as a Software Systems Engineer in Dresden, Germany.
