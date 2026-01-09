@@ -1,0 +1,191 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-description">{{ page.description }}</p>
+  </header>
+
+  <article>
+    {{ content }}
+  </article>
+
+  <div id="chart"></div>
+
+  {%- if page.related_publications != null and page.related_publications.size > 0 -%}
+  {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
+  <h2>References</h2>
+  <div class="publications">
+    {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ publications }}]* %}
+  </div>
+  {%- endif %}
+
+  {%- if site.giscus and page.giscus_comments -%}
+    {% include giscus.html %}
+  {%- endif %}
+
+</div>
+
+<style>
+  .node:hover {
+    cursor: pointer;
+    stroke: #000;
+    stroke-width: 1.5px;
+  }
+  .tooltip {
+    position: absolute;
+    text-align: left;
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    font: 14px sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 8px;
+    pointer-events: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  .tooltip .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .tooltip .author {
+    margin-bottom: 5px;
+  }
+</style>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+  const width = 1000;
+  const height = 400;
+  const margin = 50;
+  const labelPadding = 60;
+
+  const fixedNodeSize = 7;
+
+  const svg = d3.select("#chart")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+  const tooltip = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+
+  svg.append("text")
+    .attr("x", width / 2)
+    .attr("y", margin / 2)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#ccc")
+    .attr("font-size", "20px")
+    .text("Math");
+
+  svg.append("text")
+    .attr("x", width-margin/2)
+    .attr("y", height / 2)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#ccc")
+    .attr("font-size", "20px")
+    .text("Stats");
+
+  svg.append("text")
+    .attr("x", width / 2)
+    .attr("y", height - margin / 2)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#ccc")
+    .attr("font-size", "20px")
+    .text("Computer Science");
+
+  svg.append("text")
+    .attr("x", margin)
+    .attr("y", height / 2)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#ccc")
+    .attr("font-size", "20px")
+    .text("Finance");
+
+  const colorScale = d3.scaleLinear()
+    .domain([0, 1])
+    .interpolate(d3.interpolateRgb)
+    .range(["#1f77b4", "#ff6969"]);
+
+  function getColor(d) {
+    const total = d.math + d.statistics + d.comp_sci + d.finance;
+    const weightedScore = (d.math * 0 + d.statistics * 0.33 + d.comp_sci * 0.67 + d.finance * 1) / total;
+    return colorScale(weightedScore);
+  }
+
+  const simulation = d3.forceSimulation(papers)
+    .force("x", d3.forceX(d => {
+      if (d.math >= d.statistics && d.math >= d.comp_sci && d.math >= d.finance) {
+        return width / 2;
+      } else if (d.statistics > d.math && d.statistics > d.comp_sci && d.statistics > d.finance) {
+        return width - margin - labelPadding;
+      } else if (d.comp_sci > d.math && d.comp_sci > d.statistics && d.comp_sci > d.finance) {
+        return width / 2;
+      } else {
+        // Handle ties
+        if (d.math === d.statistics && d.math > d.comp_sci && d.math > d.finance) {
+          return (width / 2 + (width - margin - labelPadding)) / 2; // Average center and right
+        } else if (d.math === d.comp_sci && d.math > d.statistics && d.math > d.finance) {
+          return (width / 2 + margin + labelPadding) / 2; // Average center and left
+        } else if (d.statistics === d.comp_sci && d.statistics > d.math && d.statistics > d.finance) {
+          return (width - margin - labelPadding + margin + labelPadding) / 2; // Average right and left
+        } else {
+          return margin + labelPadding;
+        }
+      }
+    }).strength(0.2))
+    .force("y", d3.forceY(d => {
+      if (d.math > d.statistics && d.math > d.comp_sci && d.math > d.finance) {
+        return margin + labelPadding;
+      } else if (d.statistics > d.math && d.statistics > d.comp_sci && d.statistics > d.finance) {
+        return height / 2;
+      } else if (d.comp_sci > d.math && d.comp_sci > d.statistics && d.comp_sci > d.finance) {
+        return height - margin - labelPadding;
+      } else {
+        // Handle ties
+        if (d.math === d.statistics && d.math > d.comp_sci && d.math > d.finance) {
+          return (margin + labelPadding + height / 2) / 2; // Average top and center
+        } else if (d.math === d.comp_sci && d.math > d.statistics && d.math > d.finance) {
+          return (margin + labelPadding + height - margin - labelPadding) / 2; // Average top and bottom
+        } else if (d.statistics === d.comp_sci && d.statistics > d.math && d.statistics > d.finance) {
+          return (height / 2 + height - margin - labelPadding) / 2; // Average center and bottom
+        } else {
+          return height / 2;
+        }
+      }
+    }).strength(0.2))
+    .force("collide", d3.forceCollide(fixedNodeSize + 5))
+    .on("tick", ticked);
+
+  function ticked() {
+    const u = svg.selectAll("g")
+      .data(papers)
+      .join("g")
+      .attr("class", "node")
+      .attr("transform", d => `translate(${d.x},${d.y})`)
+      .on("mouseover", function(event, d) {
+        tooltip.transition()
+          .duration(200)
+          .style("opacity", .9);
+        tooltip.html(`<div class="title">${d.title}</div><div class="author">${d.author}</div>`)
+          .style("left", (event.pageX + 5) + "px")
+          .style("top", (event.pageY - 28) + "px");
+      })
+      .on("mouseout", function(d) {
+        tooltip.transition()
+          .duration(500)
+          .style("opacity", 0);
+      })
+      .on("click", function(event, d) {
+        window.open(d.link, "_blank");
+      });
+
+    u.append("circle")
+      .attr("r", fixedNodeSize)
+      .attr("fill", getColor);
+  }
+</script>

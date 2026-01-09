@@ -1,0 +1,69 @@
+---
+layout: page
+---
+
+<!-- resources.html -->
+
+<div class="panel-group" id="accordion">
+  {% for category in page.resources %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ forloop.index }}">
+            {{ category.subject }}
+          </a>
+        </h4>
+      </div>
+      <div id="collapse{{ forloop.index }}" class="panel-collapse collapse {% if forloop.first %}in{% endif %}">
+        <div class="panel-body">
+          {% if category.subsections %}
+            {% for subsection in category.subsections %}
+              <h5>{{ subsection.subsection }}</h5>
+              <ul>
+                {% for resource in subsection.items %}
+                  <li>
+                    <a href="{{ resource.link }}" target="_blank" style="text-decoration: none;">
+                      <h6 style="display: inline-block; margin-right: 10px;">{{ resource.title }}</h6>
+                      {% case resource.type %}
+                        {% when 'pdf' %}
+                          <i class="fas fa-file-pdf" style="font-size: 24px;"></i>
+                        {% when 'video' %}
+                          <i class="fas fa-video" style="font-size: 24px;"></i>
+                        {% when 'article' %}
+                          <i class="fas fa-newspaper" style="font-size: 24px;"></i>
+                        {% when 'website' %}
+                          <i class="fas fa-globe" style="font-size: 24px;"></i>
+                      {% endcase %}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endfor %}
+          {% else %}
+            <ul>
+              {% for resource in category.items %}
+                <li>
+                    {% if resource.link %}
+                      <a href="{{ resource.link }}" target="_blank" style="text-decoration: none;">
+                    {% endif %}
+                    <h6 style="display: inline-block; margin-right: 10px;">{{ resource.title }}</h6>
+                    {% case resource.type %}
+                      {% when 'pdf' %}
+                        <i class="fas fa-file-pdf" style="font-size: 24px;"></i>
+                      {% when 'video' %}
+                        <i class="fas fa-video" style="font-size: 24px;"></i>
+                      {% when 'article' %}
+                        <i class="fas fa-newspaper" style="font-size: 24px;"></i>
+                      {% when 'website' %}
+                        <i class="fas fa-globe" style="font-size: 24px;"></i>
+                    {% endcase %}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,105 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Ananyapam De
+    - name: Date of Birth
+      value: 14th September 2000
+    - name: Languages
+      value: Bengali, Hindi, English, Sanskrit
+
+- title: Research Interests
+  type: list
+  contents:
+    - Probabilistic ML, Approximate Inference, Regression Models, Optimization, Deep Learning
+
+- title: Skills
+  type: list
+  contents:
+    - C/C++, Python (Pytorch, Tensorflow), R, SQL
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Research Assistant (RA)
+      institution: Technische Universität Clausthal, Germany
+      department: Department of Mathematics
+      year: 2024 - Present 
+    - title: Bachelors and Masters (BS-MS) Dual Degree
+      institution: Indian Instiute of Science Education and Research, Kolkata
+      department: Department of Mathematics and Statistics
+      year: 2018 - 2023
+      description:
+        - <strong>Minor:</strong> Computational and Data Sciences
+        - <strong>MS Thesis Title:</strong> Latent Factor Analysis and Regression of Multivariate Poisson Lognormal Counts using Amortized Variational Inference
+        - <strong>MS Thesis Supervisor:</strong> <a href="https://www.mpinat.mpg.de/soeding">Prof. Johannes Soeding</a>, co-advised by <a href="https://www.iiserkol.ac.in/web/en/people/faculty/dms/satyaki/">Prof. Satyaki Mazumder</a>.
+        - <strong>Courses:</strong>
+          <ul><strong>Mathematics:</strong> Real Analysis, Linear Algebra, Abstract Algebra, Graph Theory and Combinatorics, Topology, Complex Analysis, Functional Analysis, Measure Theory, Differential Geometry, Ordinary Differential Equations, Partial Differential Equations</ul>
+          <ul><strong>Statistics:</strong> Probability Theory and Measure Theoretic Probability, Statistical Inference, Linear Models, Time Series</ul>
+          <ul><strong>Economics:</strong> Economics, Applied Micro-econometrics </ul>
+          <ul><strong>Computer Science:</strong> Data Structures and Algorithms, Machine Learning and Network Analysis, Natural Language Processing, Search Methods in Artificial Intelligence, Information Retrieval</ul>
+    - title: High School
+      institution: St. Columba's School, New Delhi
+      year: 2004 - 2018
+
+- title: Research Experience
+  type: time_table
+  contents:
+    - title: Pre-Doctoral Fellow
+      institution: Indian Institute of Technology, Bombay
+      department: Centre for Machine Intelligence and Data Science
+      year: Jul - Dec 2023
+      description:
+        - <b>Project Supervisor:</b> <a href="https://www.cse.iitb.ac.in/~sharat/">Prof. Sharat Chandran</a>, IIT-B.
+        - <b>Courses:</b> Computer Graphics, Asymptotic Statistics, Operating Systems
+    - title: Research Assistant
+      institution: Indian Institute of Management, Bangalore
+      department: Decision Sciences Department
+      year: Dec 2022 - Mar 2023
+      description:
+        - <b>Project Title:</b> Optimal Staring Lineup and Substitution Strategy for NBA using GRASP and Deep Q Learning.
+        - <b>Project Supervisor:</b> Prof. Soudeep Deb, Prof. Rishideep Roy and Prof. Subhabrata Das
+
+    - title: Machine Learning Research Assistant
+      institution: Google Winter of Code, Skit AI
+      year: Dec 2021 - Feb 2022
+      description:
+        - <b>Project Title:</b> Improving Text-to-Speech(TTS) systems.
+
+    - title: Quantitative Research Intern
+      institution: JP Morgan Chase
+      year: Jul - Aug, 2021
+      description:
+        - <b>Project Title:</b> Volatility Modelling in Crude Oil Prices
+    
+    - title: Research Software Developer
+      institution: Max Planck Institute of Multidisciplinary Sciences, Göttingen
+      department: Quantitative and Computational Biology Group
+      year: May - Jul, 2021
+      description:
+        - <b>Project Title:</b> Gappiness Match Score Correction
+        - <b>Project Supervisor:</b> Prof. Johannes Söding
+
+    - title: Quant Trading Intern
+      institution: Stellar Alpha Global (Now Greenland Investment)
+      year: Apr - May, 2020
+      description:
+        - <b>Project Title:</b> Researched on Alpha Generation Strategies using Fractal Analysis
+
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - title: Teaching Assistant
+      institution: Technische Universität Clausthal, Germany
+      year: Mar - Jul 2024
+      description: Acted as the TA for the Statistical Data Science course.
+
+    - title: Teaching Fellow
+      institution: Ashoka University, Sonipat (in collaboration with IIT-D, ISI-D, JNU)
+      year: May - June 2023
+      description: Taught and assisted undergrads and high school students in olympiad level mathematics problem solving in Number Theory, Geometry and Combinatorics.
+
+    - title: Teaching Assistant
+      institution: Indian Institute of Science Education and Research, Kolkata
+      year: Aug - Dec 2022
+      description: Acted as the TA for the Statistcs-I (MA3205) course.
