@@ -16,13 +16,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm currently pursuing my Master's in Computer Science at Clausthal University of Technology, Germany. My Master's thesis focuses on **Traceability and Impact Analysis for DevOps-Based Airborne Software** at DLR Braunschweig.
+I’m a **Software Engineer** with a strong interest in building reliable, data-driven systems that solve real-world problems. With a Master’s degree in Computer Science at Clausthal University of Technology, and focus on backend development, full-stack applications, and high-quality software engineering.
 
-I'm currently working as a Research Assistant (HiWi) at TU Clausthal, where I'm building a **RAG-based factual reasoning pipeline** to analyze and reduce hallucinations in mid-sized LLMs. This involves evaluating 8B-parameter models using custom benchmarks, embedding similarity metrics, and experimenting with knowledge editing techniques for trustworthy LLM behavior.
+Alongside my studies, I worked as a Research Assistant (HiWi) at TU Clausthal, where I build a **RAG-based factual reasoning pipeline** to evaluate and reduce hallucinations in mid-sized language models. My work includes benchmarking 8B-parameter LLMs, analyzing embedding-based retrieval quality, and experimenting with techniques for more trustworthy model behavior.
 
-My professional experience spans **Software Engineering** and **DevOps**. At HolyPoly GmbH, I designed VM setups for Flet/Flutter development and managed deployments with Docker. At CARIAD SE (Volkswagen Group), I developed ETL pipelines for PowerBI dashboards and assisted in CI/CD pipeline design for Audi ADAS projects using Jenkins and containerized environments.
+I work primarily with Python, JavaScript/TypeScript, and React, and enjoy designing APIs, automating workflows, and transforming complex data into clear, traceable systems. Through industry roles at **Volkswagen Group (CARIAD)** and **HolyPoly GmbH**, as well as research projects with the **German Aerospace Center (DLR)**, I’ve gained hands-on experience with data pipelines, CI/CD environments, and production-ready web applications.
 
-I completed my Bachelor's in Computer Science from Indore Institute of Science and Technology, India (2014-2018).
+I’m driven by building software that is not only functional, but trustworthy—well-documented, testable, and designed for long-term impact. I enjoy learning new technologies, collaborating across disciplines, and working on systems that combine engineering quality with meaningful purpose.
 
 **Technical Skills:**
 - **Programming:** Python, Java, C#, C++, JavaScript, TypeScript (learning), React
