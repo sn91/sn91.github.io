@@ -25,7 +25,7 @@ I work primarily with Python, JavaScript/TypeScript, and React, and enjoy design
 I’m driven by building software that is not only functional, but trustworthy—well-documented, testable, and designed for long-term impact. I enjoy learning new technologies, collaborating across disciplines, and working on systems that combine engineering quality with meaningful purpose.
 
 **Technical Skills:**
-- **Programming:** Python, Java, C#, C++, JavaScript, TypeScript (learning), React
+- **Programming:** Python, Java, C#, C++, JavaScript, TypeScript (learning), React, RUST(earning)
 - **DevOps & Tools:** CI/CD pipelines, Docker, Jenkins, Git, Bitbucket, Vagrant, Linux
 - **Databases:** MySQL, MongoDB, Neo4j, PowerBI
 - **Software Engineering:** UML, SysML, ASPICE, Software Validation, Agile/Scrum, TDD
