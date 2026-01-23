@@ -45,7 +45,7 @@
         - Experimenting with knowledge editing techniques and structured retrieval for trustworthy LLM behavior.
     - title: Master's Thesis - Traceability and Impact Analysis for Airborne Software
       institution: DLR, Braunschweig, Germany
-      year: 2024 - 2025
+      year: Nov 2024 - June 2025
       description:
         - Built a model and ontology for DO-178C traceability in DevOps CI environments.
         - Developed Python tooling and used graph databases to automate test and requirement impact analysis.
